@@ -1,4 +1,4 @@
 @extends('layouts.main-layout')
 @section('content')
-    <h1>Hello World</h1>
+    <h1>Current Series</h1>
 @endsection

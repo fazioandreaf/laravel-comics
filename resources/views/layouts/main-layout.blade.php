@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/app.css">
     <title>Dc Comics</title>
 </head>
 <body>
     @include('components.header')
-    @yield('content')
+    @include('components.jumbotron')
+    @yield('Current Series')
+    @include('components.main_card')
+
     @include('components.footer')
 </body>
 </html>
