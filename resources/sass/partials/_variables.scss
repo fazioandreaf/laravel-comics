@@ -1,5 +1,9 @@
 @mixin padding-div {
     padding-left: 10%;
     padding-right: 10%;
-
 }
+@mixin padding-top-bottom {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+

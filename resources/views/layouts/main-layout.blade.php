@@ -10,7 +10,6 @@
 <body>
     @include('components.header')
     @include('components.jumbotron')
-    @yield('Current Series')
     @include('components.main_card')
 
     @include('components.footer')
