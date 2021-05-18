@@ -1,4 +1,7 @@
 @extends('layouts.main-layout')
 @section('content')
-    <h1>Current Series</h1>
+    @include('components.jumbotron')
+    @include('components.main_card')
+    @include('components.reminder_img')
 @endsection
+

@@ -59,7 +59,7 @@
 
 * body .jumbotron {
   width: 100%;
-  height: 450px;
+  height: 650px;
 }
 
 * body .jumbotron img {
@@ -70,21 +70,29 @@
 * body .main_card {
   padding-left: 10%;
   padding-right: 10%;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: #1c1c1c;
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+}
+
+* body .main_card .button {
+  text-transform: uppercase;
+  align-self: center;
 }
 
 * body .main_card span:nth-child(1) {
   background-color: #0282f9;
   color: white;
-  padding: 5px;
+  padding: 10px;
   position: absolute;
   top: 0px;
   transform: translateY(-50%);
+  font-size: 3rem;
+  text-transform: uppercase;
 }
 
 * body .main_card div {
@@ -102,8 +110,93 @@
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 50%;
+  height: 70%;
   -o-object-position: top;
      object-position: top;
+}
+
+* body .reminder_img {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+}
+
+* body .reminder_img .reminder_img_single {
+  flex-basis: 20%;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+* body .reminder_img .reminder_img_single img {
+  padding: 10px;
+  width: 40%;
+}
+
+* body footer {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+  background-image: url("/storage/asset/images/dc-logo-bg.png"), url("/storage/asset/images/footer-bg.jpg");
+  display: flex;
+  flex-direction: column;
+  background-size: auto, cover;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  color: #757575;
+}
+
+* body footer .footer_up {
+  display: flex;
+  width: 50%;
+}
+
+* body footer .footer_up h2 {
+  color: white;
+}
+
+* body footer .footer_up ul {
+  list-style: none;
+}
+
+* body footer .footer_down {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 50%;
+}
+
+* body footer .sign_social {
+  padding-left: 10%;
+  padding-right: 10%;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #303030;
+  height: 60px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+* body footer .sign_social .button {
+  background-color: inherit;
+  border: 1px solid #0282f9;
+  color: white;
+}
+
+* body footer .sign_social .social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 40%;
+  color: #0282f9;
 }
 

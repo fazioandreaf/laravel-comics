@@ -47,12 +47,9 @@
 
             }
         }
-
-
-
         .jumbotron{
             width: 100%;
-            height: 450px;
+            height: 650px;
             img{
                 width: 100%;
                 height: 100%;
@@ -66,13 +63,20 @@
             position: relative;
             display: flex;
             flex-wrap: wrap;
+            flex-direction: column;
+            .button{
+                text-transform: uppercase;
+                align-self: center;
+            }
             span:nth-child(1){
                 background-color: #0282f9;
                 color: white;
-                padding: 5px;
+                padding: 10px;
                 position: absolute;
                 top: 0px;
                 transform: translateY(-50%);
+                font-size: 3rem;
+                text-transform: uppercase;
             }
 
             div{
@@ -87,13 +91,86 @@
                     img{
                         width: 100%;
                         object-fit: cover;
-                        height: 50%;
+                        height: 70%;
                         object-position: top;
                     }
                 }
             }
 
         }
+        .reminder_img{
+            @include padding-div;
+            @include padding-top-bottom;
+            display: flex;
+            align-items: center;
+            .reminder_img_single{
+                flex-basis:20%;
+                display: flex;
+                align-items: center;
+                color: white;
+                text-transform: uppercase;
+                img{
+                    padding:10px;
+                    width: 40%;
+                }
+            }
+        }
+        footer{
+            @include padding-div;
+            @include padding-top-bottom;
+            position: relative;
+            background-image: url('/storage/asset/images/dc-logo-bg.png'), url('/storage/asset/images/footer-bg.jpg');
+            display: flex;
+            flex-direction: column;
+            background-size: auto,cover;
+            background-repeat: no-repeat;
+            background-position-x: right;
+            color: #757575;
+            .footer_up{
+                display: flex;
+                width: 50%;
+                h2{
+                    color: white;
+                }
+                ul{
+                    list-style: none;
+                    li{
+                    }
+                }
+            }
+            .footer_down{
+                padding-top: 10px;
+                padding-bottom: 10px;
+                width: 50%;
+            }
+            .sign_social{
+                @include padding-div;
+                text-transform: uppercase;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #303030;
+                height: 60px;
+                position: absolute;
+                width: 100%;
+                left: 0;
+                bottom: 0;
+                .button{
+                    background-color: inherit;
+                    border:1px solid #0282f9;
+                    color: white;
+                }
+                .social{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-basis: 40%;
+                    color:#0282f9 ;
+                }
+            }
+        }
+
+
     }
 
 

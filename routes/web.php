@@ -17,3 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('pages/home', 'ControllerPage@home');
+Route::get('pages/{index}', 'ControllerPage@description')->name('description');

@@ -1,16 +1,18 @@
 <div class="main_card">
     <span>
-        @yield('content')
+        Current series
     </span>
     <div>
 
         @foreach ($data as $item)
         <div class="main_card_single">
             <img src="{{$item['thumb']}}" alt="">
-            <span class="title">{{$item['title']}}</span>
+            <a href="{{route('description',$loop->index)}}">
+            {{$item['series']}}
+            </a>
         </div>
         @endforeach
-        
+
     </div>
     <span class="button">
         Load More
