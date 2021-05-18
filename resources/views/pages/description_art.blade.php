@@ -1,13 +1,8 @@
 @extends('layouts.main-layout')
 @section('content')
-
-<div>
-
-    {{$i['title']}}
-</div>
-<div>
-
-    {{$i['description']}}
-</div>
+@include('components.jumbotron')
+@include('components.thumb')
+@include('components.description')
+@include('components.description_advance')
 @endsection
 
