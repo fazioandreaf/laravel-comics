@@ -132,6 +132,33 @@
   width: 100%;
 }
 
+* body .description_advance .description_advance_main {
+  background-color: lightgrey;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+}
+
+* body .description_advance .description_advance_main > div {
+  flex-basis: 50%;
+}
+
+* body .description_advance .description_advance_main > div > div {
+  display: flex;
+}
+
+* body .description_advance .description_advance_main > div > div span:nth-child(1) {
+  flex-basis: 35%;
+}
+
+* body .description_advance .description_advance_main > div > div span:nth-child(2) {
+  flex: 1;
+}
+
+* body .description_advance .description_advance_main > div h2 {
+  margin: 10px 0;
+}
+
 * body .reminder_img_grey {
   padding-left: 10%;
   padding-right: 10%;

@@ -6,7 +6,10 @@
                 <span>Art By:</span>
                 <span>
                     @foreach ($i['artists'] as $item)
-                    {{$item}}
+                    <a href="">
+
+                        {{$item}}
+                    </a>
                     @endforeach
                 </span>
             </div>
@@ -14,7 +17,10 @@
                 <span>Written By:</span>
                 <span>
                     @foreach ($i['writers'] as $item)
-                    {{$item}}
+                    <a href="">
+
+                        {{$item}}
+                    </a>
                     @endforeach
                 </span>
             </div>
