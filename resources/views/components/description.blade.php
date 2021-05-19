@@ -17,6 +17,6 @@
         </div>
     </div>
     <div class="adv">
-        <img src="{{ asset('storage/asset/images/adv.jpg') }}" alt="adv">
+        <img src="{{ asset('/storage/asset/images/adv.jpg') }}" alt="adv">
     </div>
 </div>
